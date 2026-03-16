@@ -740,6 +740,9 @@ body {
 
 /* ===== RESPONSIVE — MOBILE PEQUEÑO (≤ 480px) ===== */
 @media screen and (max-width: 480px) {
+  .hero .wave {
+    display: none;
+  }
   .contenedor-textos .title {
     font-size: 48px;
   }
