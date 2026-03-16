@@ -131,5 +131,5 @@ const nuevoCard = (item) => {
   containerMenu.appendChild(nuevaCard);
 };
 data.forEach((item) => {
-  nuevoCard(item);
+  // nuevoCard(item);
 });
