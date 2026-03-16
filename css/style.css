@@ -46,7 +46,6 @@ body {
   top: 0;
   z-index: 10;
   width: 100%;
-  background-color: red;
 }
 
 .caja-header {
@@ -92,7 +91,6 @@ body {
 
 .contenedorNav {
   padding: 0 35px;
-  background-color: blue;
   bottom: 70px;
 }
 
@@ -132,7 +130,6 @@ body {
   margin-bottom: 50px;
 }
 .wrapInternoHero {
-  border: 1px solid red;
   width: 100%;
 }
 .wrapTextoMain {
@@ -141,7 +138,6 @@ body {
   transition: opacity 1.9s ease, top 1.9s ease;
   opacity: 0;
   top: 500px;
-  border: 1px solid red;
 }
 
 .wrapTextoMainUbicado {
@@ -598,7 +594,6 @@ body {
 
 @media screen and (max-width: 1200px) {
   .contenedor-textos p {
-    /* border: 1px solid blue; */
     width: 500px;
   }
 }
@@ -707,7 +702,6 @@ body {
 
   .menu .wrapCardMenu {
     flex-direction: column;
-    border: 1px solid red;
   }
   .menu .cardMenu {
     flex: 0 0 380px;
