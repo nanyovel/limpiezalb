@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="/servicios/interior-vehiculo/css/style.css" />
+    <link
+      rel="preload"
+      href="/servicios/interior-vehiculo/css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="/servicios/interior-vehiculo/css/style.css"
+    /></noscript>
     <link
       rel="icon"
       href="https://firebasestorage.googleapis.com/v0/b/sarapetshop.firebasestorage.app/o/variosNanyovel%2Flogo%20LB%20multiservice.png?alt=media&token=3de00be5-5b51-4808-b641-5a2bd6992ddc"
@@ -37,6 +40,11 @@
       content="Servicio de limpieza de interior de vehículo con lavado profundo, desmontaje de asientos y eliminación de olores a domicilio."
     />
     <title>Interior de Vehículo | Limpieza LB</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ===== HEADER ===== -->
@@ -398,10 +406,6 @@
       </div>
     </footer>
 
-    <script src="/servicios/interior-vehiculo/codigo/codigo.js"></script>
-    <script
-      src="https://kit.fontawesome.com/82070f8328.js"
-      crossorigin="anonymous"
-    ></script>
+    <script defer src="/servicios/interior-vehiculo/codigo/codigo.js"></script>
   </body>
 </html>

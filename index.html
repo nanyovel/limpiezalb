@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <noscript><link rel="stylesheet" href="/css/style.css" /></noscript>
     <link
       rel="icon"
       href="https://firebasestorage.googleapis.com/v0/b/sarapetshop.firebasestorage.app/o/variosNanyovel%2Flogo%20LB%20multiservice.png?alt=media&token=3de00be5-5b51-4808-b641-5a2bd6992ddc"
@@ -20,6 +22,11 @@
       content="Somos una de las mejores empresas de limpieza en Higüey, La Altagracia, ofreciendo servicios profesionales para hogares, oficinas y vehículos. Nuestro equipo altamente capacitado utiliza herramientas y maquinarias especializadas para garantizar resultados de alta calidad. Nos enfocamos en brindar soluciones de limpieza eficientes para diferentes superficies y ambientes, cuidando cada detalle para lograr espacios limpios, frescos y saludables. Confía en nosotros para renovar tus espacios con limpieza profesional."
     />
     <title>Limpieza LB</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <meta property="og:site_name" content="Limpieza LB" />
     <meta property="og:title" content="Limpieza LB" />
@@ -388,7 +395,12 @@
             </div> -->
           </div>
           <div class="img-contactos">
-            <img src="img/contactUndraw.svg" alt="Contacto img svg undraw" />
+            <img
+              width="300"
+              height="250"
+              src="img/contactUndraw.svg"
+              alt="Contacto img svg undraw"
+            />
           </div>
         </div>
       </section>
@@ -413,11 +425,6 @@
         </p>
       </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/82070f8328.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="codigo/codigo.js"></script>
+    <script defer src="codigo/codigo.js"></script>
   </body>
 </html>
