@@ -507,6 +507,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center bottom;
 }
 
 .menu .cardMenu h2 {
@@ -606,7 +607,7 @@ body {
 }
 
 .img-contactos img {
-  width: 100%;
+  width: 75%;
   border-radius: 20px;
   box-shadow: 2px 3px 12px 0px #000;
 }
@@ -771,10 +772,6 @@ body {
 
     width: 100%;
     height: 550px;
-  }
-
-  .menu .cardMenu .imgCardMenu {
-    height: 100%;
   }
 
   .contactos {
