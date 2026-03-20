@@ -42,18 +42,22 @@ body {
 
 /* ===== HEADER ===== */
 .header {
-  position: relative;
+  position: fixed;
+  padding-bottom: 7px;
   top: 0;
   z-index: 10;
   width: 100%;
-  background-image: linear-gradient(to top, #0e172fe4 100%),
-    url(../img/alfonbra1.jpg);
+  background-image: linear-gradient(to top, #0e172fe4 100%);
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--verdePrimary);
+  padding: 10px;
 }
 
 .caja-header {
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--verdePrimary);
-  width: 100%;
+  /* padding: 10px 20px; */
+
+  /* width: 50%; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -61,13 +65,13 @@ body {
 }
 
 .caja-whatsapp {
-  margin-right: 20px;
+  margin-right: 8px;
 }
 
 .header .box2 {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .header .enlaceHeader {
@@ -77,10 +81,11 @@ body {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: 300;
 }
 
 .header .enlaceHeader:hover {
-  color: var(--azulBrillante);
+  color: var(--verdeBrillante);
 }
 
 .header .caja-header i {
@@ -92,8 +97,12 @@ body {
 }
 
 .contenedorNav {
-  padding: 0 35px;
-  bottom: 70px;
+  /* padding: 0 35px; */
+  /* bottom: 70px; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedorNav .menu {
@@ -101,20 +110,23 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 15px;
 }
 
 .contenedorNav .menu a {
-  margin-right: 25px;
+  /* margin-right: 25px; */
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   transition: color 0.3s ease;
 }
-
+.contenedorNav .menu .selected {
+  color: var(--verdeBrillante);
+  text-decoration: underline;
+}
 .contenedorNav .menu a:hover {
-  color: var(--azulBrillante);
+  color: var(--verdeBrillante);
   text-decoration: underline;
 }
 
@@ -226,8 +238,14 @@ body {
   color: white;
 }
 
+.contenedor-textos h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--verdeBrillante);
+}
 .contenedor-textos p {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .cajaBtnsContactos {
@@ -263,7 +281,7 @@ body {
 }
 
 .cajaBtnsDirecta a:hover {
-  text-decoration: underline var(--azulBrillante);
+  text-decoration: underline var(--verdeBrillante);
 }
 
 .cajaBtnsDirecta i {
@@ -279,9 +297,9 @@ body {
     color: white;
   }
   100% {
-    border: 1px solid #fff;
+    border: 1px solid var(--verdeBrillante);
     border-radius: 8px;
-    color: var(--azulBrillante);
+    color: var(--verdeBrillante);
   }
 }
 
@@ -475,6 +493,8 @@ body {
   box-shadow: 2px 3px 12px 0px rgb(35 35 35 / 80%);
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu .cardMenu .imgCardMenu {
@@ -502,7 +522,30 @@ body {
   align-items: center;
   padding: 0 8px;
 }
+.menu .cardMenu .btn-ver {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  background: var(--azulBrillante);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.25s ease;
+  margin: auto;
+  cursor: pointer;
+}
 
+.menu .cardMenu .btn-ver:hover {
+  background: var(--azulPrimary);
+}
+
+.menu .cardMenu .btn-ver i {
+  font-size: 0.85rem;
+}
 /* ===== CONTACTOS ===== */
 .contactos {
   margin-top: 100px;
@@ -578,9 +621,9 @@ body {
 .footer {
   width: 100%;
   min-height: 30px;
-  background-color: #ffde08;
+  background-color: #000;
   text-align: center;
-  color: black;
+  color: #ffde08;
   padding: 6px 10px;
   font-size: 15px;
   display: flex;
@@ -598,10 +641,17 @@ body {
   .contenedor-textos p {
     width: 500px;
   }
+
+  .contenedor-textos h2 {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1100px) {
   .secundarioUnicado {
     right: 40px;
+  }
+  .contenedor-textos h2 {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -669,7 +719,13 @@ body {
     min-width: unset;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+}
 /* ===== RESPONSIVE — MOBILE GRANDE (≤ 768px) ===== */
 @media screen and (max-width: 768px) {
   .caja-whatsapp {
@@ -740,6 +796,15 @@ body {
 
 /* ===== RESPONSIVE — MOBILE PEQUEÑO (≤ 480px) ===== */
 @media screen and (max-width: 480px) {
+  .header .caja-header {
+    padding: 10px 6px;
+  }
+  .header .enlaceHeader i {
+    font-size: 16px;
+  }
+  .header .enlaceHeader {
+    font-size: 14px;
+  }
   .hero .wave {
     display: none;
   }
