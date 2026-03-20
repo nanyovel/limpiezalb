@@ -137,7 +137,7 @@ body {
 /* ===== HERO DEL SERVICIO ===== */
 .hero-servicio {
   background-image: linear-gradient(to top, #0e172fe4 100%),
-    url(/img/gallery/small/lavadoColchon.png);
+    url(/img/gallery/small/lavadoColchon.webp);
   background-position: bottom;
 
   background-repeat: no-repeat;

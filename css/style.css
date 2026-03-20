@@ -133,7 +133,7 @@ body {
 /* ===== HERO ===== */
 .hero {
   background-image: linear-gradient(to top, #0e172fe4 100%),
-    url(../img/alfonbra1.jpg);
+    url(../img/alfonbra.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

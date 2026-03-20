@@ -114,7 +114,7 @@ body {
 /* ===== HERO SERVICIOS ===== */
 .hero-servicios {
   background-image: linear-gradient(to top, #0e172fe4 100%),
-    url(/img/gallery/small/limpiezaHogar.png);
+    url(/img/gallery/small/limpiezaHogar.webp);
 
   background-repeat: no-repeat;
   background-position: center;
