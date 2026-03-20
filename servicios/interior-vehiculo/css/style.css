@@ -137,7 +137,7 @@ body {
 /* ===== HERO DEL SERVICIO ===== */
 .hero-servicio {
   background-image: linear-gradient(to top, #0e172fe4 100%),
-    url(/img/limpiezaSala.png);
+    url(/img/gallery/small/interiorVehiculo.png);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -243,7 +243,7 @@ body {
   overflow: hidden;
   box-shadow: var(--sombra);
   margin-bottom: 48px;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 8 / 7;
 }
 
 .img-principal img {
