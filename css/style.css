@@ -139,17 +139,51 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 110vh;
+  height: 110vh;
   padding: 0.1px;
   position: relative;
   margin-bottom: 50px;
 }
+
 .wrapInternoHero {
   width: 100%;
+  height: 100%;
+  padding: 1px;
+  /* position: relative; */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap2InternoHero {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.caja-logo {
+  /* background-color: red; */
+  height: 200px;
+  animation: aparecerIzquierda 1.2s ease forwards;
+}
+.caja-logo img {
+  height: 100%;
+  width: auto;
+  border-radius: 8px;
+}
+@keyframes aparecerIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .wrapTextoMain {
-  position: absolute;
-  left: 120px;
-  top: 200px;
+  /* height: 400px; */
 
   opacity: 0;
   animation: aparecerSubiendo 1.2s ease forwards;
@@ -164,69 +198,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.secundario {
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  width: 300px;
-  height: 250px;
-  position: absolute;
-  right: 0;
-  bottom: 250px;
-  transition: opacity 3s ease, right 3s ease;
-  opacity: 0;
-  box-shadow: 2px 3px 12px 0px rgb(0 0 0 / 80%);
-}
-
-.secundarioUnicado {
-  right: 80px;
-  top: 200px;
-  opacity: 1;
-}
-
-.secundario img {
-  width: 250px;
-}
-
-.secundario .posicionada {
-  position: absolute;
-  width: 70px;
-}
-
-.secundario .asientoCoche {
-  left: 0;
-  bottom: 40px;
-}
-
-.secundario .sofa {
-  right: 15px;
-  top: 40px;
-}
-
-@keyframes floatAnimation {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(4px, -3px);
-  }
-  50% {
-    transform: translate(-3px, 4px);
-  }
-  75% {
-    transform: translate(2px, -2px);
-  }
-}
-
-.float1 {
-  animation: floatAnimation 6s ease-in-out infinite;
-}
-.float2 {
-  animation: floatAnimation 6s ease-in-out infinite 2s;
 }
 
 .contenedor-textos {
@@ -624,6 +595,64 @@ body {
   display: block;
 }
 
+/* ===== CTA BOTTOM ===== */
+.cta-contacto {
+  background-image: linear-gradient(
+    135deg,
+    var(--azulPrimary) 0%,
+    #0d3a9e 100%
+  );
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-contacto h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-contacto p {
+  font-size: 1.05rem;
+  color: #a8c0f0;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.cta-contacto .btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cta-contacto a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-contacto a:hover {
+  transform: scale(1.04);
+  opacity: 0.93;
+}
+
+.btn-wa {
+  background: #25d366;
+  color: #fff;
+}
+.btn-tel {
+  background: var(--verdePrimary);
+  color: #fff;
+}
 /* ===== FOOTER ===== */
 .footer {
   width: 100%;
@@ -644,34 +673,31 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .contenedor-textos p {
-    width: 500px;
-  }
-
-  .contenedor-textos h2 {
+@media screen and (max-width: 1100px) {
+  .wrap2InternoHero {
     width: 90%;
   }
 }
-@media screen and (max-width: 1100px) {
-  .secundarioUnicado {
-    right: 40px;
-  }
-  .contenedor-textos h2 {
-    width: 80%;
-  }
-}
 @media screen and (max-width: 1000px) {
-  .wrapTextoMain {
-    left: 80px;
-  }
-
   .galeria .galeria-container {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 50%;
     gap: 8px;
+  }
+  .wrap2InternoHero {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .caja-logo {
+    height: 70px;
+  }
+  .contenedor-textos .title {
+    font-size: 50px;
+  }
+  .cajaBtnsContactos {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -680,8 +706,6 @@ body {
   }
   .wrapTextoMain {
     width: 80%;
-    top: 40%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
 }
@@ -723,7 +747,10 @@ body {
   .contactos .contenedor-horario-ubicacion,
   .img-contactos {
     width: 90%;
+    max-width: 400px;
     min-width: unset;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -738,7 +765,9 @@ body {
   .caja-whatsapp {
     margin-right: 0;
   }
-
+  .hero .wave {
+    display: none;
+  }
   .contenedorNav {
     padding: 0 15px;
   }
@@ -752,8 +781,8 @@ body {
     font-size: 16px;
   }
 
-  .secundario {
-    display: none;
+  .wrapTextoMain {
+    width: 95%;
   }
 
   .contenedor-textos .title {
@@ -796,7 +825,19 @@ body {
     width: 70%;
   }
 }
+@media screen and (max-width: 520px) {
+  .wrapTextoMain {
+    width: 100%;
+  }
+  .contenedorNav {
+    padding: 0;
+  }
 
+  .contenedorNav .menu {
+    width: 100%;
+    gap: 7px;
+  }
+}
 /* ===== RESPONSIVE — MOBILE PEQUEÑO (≤ 480px) ===== */
 @media screen and (max-width: 480px) {
   .header .caja-header {
@@ -808,15 +849,19 @@ body {
   .header .enlaceHeader {
     font-size: 14px;
   }
-  .hero .wave {
-    display: none;
+
+  .caja-logo {
+    height: 60px;
   }
   .contenedor-textos .title {
-    font-size: 48px;
+    font-size: 35px;
   }
 
+  .contenedor-textos h2 {
+    font-size: 16px;
+  }
   .contenedor-textos p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .cajitaBtnsContactos {
