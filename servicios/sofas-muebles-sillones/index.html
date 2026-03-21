@@ -39,6 +39,31 @@
       content="Lavado profesional de sofás, sillones y muebles en Higüey. Eliminamos suciedad, manchas, ácaros y malos olores con limpieza profunda."
     />
     <title>Lavado de Sofás y Muebles — Limpieza LB</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Lavado de Sofás y Muebles",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Limpieza LB",
+          "image": "https://firebasestorage.googleapis.com/v0/b/sarapetshop.firebasestorage.app/o/variosNanyovel%2Flogo%20LB%20multiservice.png?alt=media&token=3de00be5-5b51-4808-b641-5a2bd6992ddc",
+          "teleRel": "829-488-5016",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Higüey",
+            "addressRegion": "La Altagracia",
+            "addressCountry": "DO"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Higüey" },
+          { "@type": "City", "name": "Punta Cana" },
+          { "@type": "City", "name": "La Romana" }
+        ],
+        "description": "Limpieza profunda de muebles, sofás y sillones a domicilio. Eliminación de manchas, ácaros y olores en toda la zona este."
+      }
+    </script>
   </head>
   <body>
     <!-- ===== HEADER ===== -->
@@ -97,12 +122,41 @@
     </header>
 
     <!-- ===== BREADCRUMB ===== -->
-    <nav class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span>›</span>
-      <a href="/servicios">Servicios</a>
-      <span>›</span>
-      <span>Lavado de Sofás y Muebles</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+        style="list-style: none; display: flex; padding: 0; margin: 0; gap: 8px"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/"><span itemprop="name">Inicio</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">›</li>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/servicios"
+            ><span itemprop="name">Servicios</span></a
+          >
+          <meta itemprop="position" content="2" />
+        </li>
+        <li aria-hidden="true">›</li>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Lavado de Sofás</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
     </nav>
 
     <!-- ===== HERO ===== -->
@@ -242,43 +296,10 @@
         <section>
           <h2>Fotos del trabajo</h2>
           <div class="galeria-servicio">
-            <!-- 1 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/interiorVehiculo.webp"
-                alt="Lavado de interior de vehiculo"
-                loading="lazy"
-              />
-            </div>
-            <!-- 2 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoAlfombra.webp"
-                alt="Lavado de alfombras"
-                loading="lazy"
-              />
-            </div>
-            <!-- 3 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoColchon.webp"
-                alt="Lavado de colchones"
-                loading="lazy"
-              />
-            </div>
-            <!-- 4 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/lavadoSofa.webp"
-                alt="Lavado de sofás"
-                loading="lazy"
-              />
-            </div>
-            <!-- 5 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/limpiezaHogar.webp"
-                alt="Limpieza del hogar"
+                alt="Lavado de interior de vehiculo"
                 loading="lazy"
               />
             </div>
@@ -345,9 +366,13 @@
           <a href="/servicios/limpieza-hogar"
             ><i class="fas fa-chevron-right"></i> Limpieza del Hogar</a
           >
-          <a href="/servicios/sofas-muebles-sillones/"
-            ><i class="fas fa-chevron-right"></i> Sofás, Muebles y Sillones</a
+
+          <a
+            class="active"
+            style="cursor: default; pointer-events: none; opacity: 0.7"
           >
+            <i class="fas fa-chevron-right"></i>Sofás, Muebles y Sillones
+          </a>
           <a href="/servicios/lavado-alfombras"
             ><i class="fas fa-chevron-right"></i> Lavado de Alfombras</a
           >
@@ -373,10 +398,6 @@
       </div>
     </footer>
 
-    <script
-      defer
-      src="/servicios/sofas-muebles-sillones/codigo/codigo.js"
-    ></script>
     <script
       defer
       src="https://kit.fontawesome.com/82070f8328.js"

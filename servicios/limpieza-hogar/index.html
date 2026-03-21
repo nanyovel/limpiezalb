@@ -14,11 +14,15 @@
       type="image/png"
     />
 
+    <!-- SEO -->
     <meta property="og:site_name" content="Limpieza LB" />
-    <meta property="og:title" content="Limpieza LB" />
+    <meta
+      property="og:title"
+      content="Limpieza de Casas a Domicilio — Limpieza LB"
+    />
     <meta
       property="og:description"
-      content="Descubre todos los servicios de limpieza profesional que ofrece Limpieza LB en Higüey, La Altagracia y zona este del país."
+      content="Servicio de limpieza de casas a domicilio, limpieza profunda casa y limpieza por horas. Empresa de limpieza de casas en Higüey."
     />
     <meta
       property="og:image"
@@ -30,10 +34,41 @@
 
     <meta
       name="description"
-      content="Servicio profesional de limpieza para tu hogar— Limpieza LB"
+      content="Limpieza de casas en Higüey. Empresa de limpieza de casas a domicilio, limpieza profunda casa, limpieza por horas y servicios de limpieza del hogar profesionales."
     />
-    <title>Limpieza del hogar — Limpieza LB</title>
+
+    <title>
+      Limpieza de Casas en Higüey | Servicio de Limpieza a Domicilio
+    </title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HouseCleaning",
+        "name": "Servicio de Limpieza de Casas a Domicilio",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Limpieza LB",
+          "teleRel": "829-488-5016",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Higüey",
+            "addressRegion": "La Altagracia",
+            "addressCountry": "DO"
+          }
+        },
+        "areaServed": ["Higüey", "Punta Cana", "Bávaro", "Verón", "La Romana"],
+        "description": "Limpieza profesional de casas y apartamentos. Ofrecemos limpieza profunda, limpieza por horas y mantenimiento doméstico en Higüey y zona Este.",
+        "offers": {
+          "@type": "Offer",
+          "description": "Servicio de limpieza por horas o profunda",
+          "url": "https://limpiezalb.com/servicios/limpieza-hogar"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <!-- ===== HEADER ===== -->
     <header class="header">
@@ -42,7 +77,6 @@
           <div class="box2">
             <a href="tel:+18294885016" class="enlaceHeader">
               <i class="fab fa-whatsapp"></i>
-              <!-- <span class="texto"> Llámanos: </span> -->
               <p>829-488-5016</p></a
             >
           </div>
@@ -51,7 +85,6 @@
           <div class="box2">
             <a href="tel:+18298912740" class="enlaceHeader">
               <i class="fab fa-whatsapp"></i>
-              <!-- <span class="texto"> Llámanos: </span> -->
               <p>829-891-2740</p></a
             >
           </div>
@@ -70,6 +103,7 @@
           </div>
         </div>
       </div>
+
       <div class="contenedorNav">
         <nav class="menu">
           <ul>
@@ -78,7 +112,6 @@
           <ul>
             <a href="/#galeria">Galeria</a>
           </ul>
-
           <ul>
             <a href="/servicios" class="selected">Servicios</a>
           </ul>
@@ -93,12 +126,47 @@
     </header>
 
     <!-- ===== BREADCRUMB ===== -->
-    <nav class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span>›</span>
-      <a href="/servicios">Servicios</a>
-      <span>›</span>
-      <span>Limpieza del hogar</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+        style="list-style: none; display: flex; padding: 0; margin: 0; gap: 8px"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/">
+            <span itemprop="name">Inicio</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/servicios">
+            <span itemprop="name">Servicios</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Limpieza del Hogar</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
     </nav>
 
     <!-- ===== HERO ===== -->
@@ -107,10 +175,11 @@
         <div class="cajaTagCategoria">
           <span class="tag-categoria">Hogar</span>
         </div>
-        <h1 id="hero-titulo">Limpieza del <em>Hogar</em></h1>
+        <h1 id="hero-titulo">Limpieza de <em>Casas</em> a Domicilio</h1>
         <p class="subtitulo-hero">
-          Servicio de limpieza del hogar para mantener tus espacios limpios,
-          frescos y organizados con resultados profesionales.
+          Servicio de limpieza doméstica y limpieza del hogar profesional.
+          Realizamos limpieza de casas, limpieza profunda casa y limpieza de
+          casas por horas con resultados garantizados.
         </p>
       </div>
     </section>
@@ -119,11 +188,10 @@
     <div class="layout-detalle">
       <!-- COLUMNA PRINCIPAL -->
       <div class="col-principal">
-        <!-- Imagen destacada -->
         <div class="img-principal">
           <img
             src="../../img/gallery/small/limpiezaHogar.webp"
-            alt="Limpieza del hogar"
+            alt="Servicio de limpieza profunda de casas y apartamentos en Higüey, Bavaro, Miches, El Seibo y Punta Cana"
             loading="lazy"
           />
         </div>
@@ -132,192 +200,112 @@
         <section>
           <h2>¿Qué incluye?</h2>
           <div class="lista-incluye">
-            <!-- 1 -->
             <div class="item-incluye">
               <i class="fas fa-broom"></i>
-              <span>Limpieza general de todas las áreas</span>
+              <span>Limpieza general de casas</span>
             </div>
-            <!-- 2 -->
             <div class="item-incluye">
               <i class="fas fa-water"></i>
-              <span>Barrido y trapeado de pisos</span>
+              <span>Barrido y trapeado</span>
             </div>
-            <!-- 3 -->
             <div class="item-incluye">
               <i class="fas fa-toilet"></i>
-              <span>Limpieza y desinfección de baños</span>
+              <span>Limpieza de baños</span>
             </div>
-            <!-- 4 -->
             <div class="item-incluye">
               <i class="fas fa-utensils"></i>
-              <span>Limpieza de cocina (superficies)</span>
+              <span>Limpieza de cocina</span>
             </div>
-            <!-- 5 -->
             <div class="item-incluye">
               <i class="fas fa-couch"></i>
-              <span>Limpieza de polvo en muebles</span>
+              <span>Limpieza de muebles</span>
             </div>
-            <!-- 6 -->
-            <div class="item-incluye">
-              <i class="fas fa-trash"></i>
-              <span>Vaciado de zafacones</span>
-            </div>
-            <!-- 7 -->
-            <div class="item-incluye">
-              <i class="fas fa-border-all"></i>
-              <span>Limpieza de puertas y detalles</span>
-            </div>
-            <!-- 8 -->
-            <div class="item-incluye">
-              <i class="fas fa-box-open"></i>
-              <span>Organización básica de espacios</span>
-            </div>
-            <!-- 9 -->
-            <div class="item-incluye">
-              <i class="fas fa-flask"></i>
-              <span>Uso de productos adecuados</span>
-            </div>
-            <!-- 10 -->
             <div class="item-incluye">
               <i class="fas fa-home"></i>
-              <span>Servicio a domicilio</span>
+              <span>Limpieza de casas a domicilio</span>
             </div>
           </div>
         </section>
 
-        <!-- Descripción extendida -->
+        <!-- Descripción SEO -->
         <section>
           <h2>Sobre este servicio</h2>
           <div>
             <p>
-              En <b>Limpieza LB</b> ofrecemos un servicio de limpieza del hogar
-              profesional directamente en tu domicilio, adaptado a tus
-              necesidades y espacios. Nuestro equipo llega con las herramientas
-              y productos adecuados para garantizar una limpieza completa,
-              eficiente y segura.
+              En <b>Limpieza LB</b> somos una empresa de limpieza de casas en
+              Higüey especializada en limpieza de casas a domicilio, limpieza de
+              departamentos y limpieza casas particulares.
             </p>
+
             <p>
-              Mantener tu hogar limpio no solo mejora la apariencia, sino
-              también la salud y el bienestar de quienes viven en él. Eliminamos
-              polvo, suciedad y bacterias acumuladas en diferentes áreas,
-              creando un ambiente más fresco y agradable.
+              Ofrecemos servicio de limpieza doméstica adaptado a cada cliente,
+              incluyendo limpieza casa por horas, limpieza de casas por horas o
+              limpieza profunda casa para espacios que requieren mayor atención.
             </p>
+
             <p>
-              Utilizamos técnicas y productos adecuados para cada superficie,
-              logrando resultados visibles sin dañar materiales. Nuestro
-              objetivo es brindarte comodidad, confianza y un espacio limpio
-              donde puedas disfrutar tu día a día.
+              Como empresa de servicios de limpieza, garantizamos resultados
+              profesionales utilizando productos adecuados para cada superficie.
+              Si buscas limpieza de casas cerca de mi o una compañía de limpieza
+              de casas confiable, somos tu mejor opción.
             </p>
           </div>
         </section>
 
-        <!-- Proceso paso a paso -->
+        <!-- Proceso -->
         <section>
           <h2>¿Cómo trabajamos?</h2>
           <div class="pasos">
-            <!-- 1 -->
             <div class="paso">
               <div class="numero">1</div>
               <div class="texto">
-                <h3>Evaluación del espacio</h3>
-                <p>
-                  Revisamos las áreas del hogar, el nivel de suciedad y las
-                  necesidades específicas para definir el tipo de limpieza más
-                  adecuado.
-                </p>
+                <h3>Evaluación</h3>
+                <p>Analizamos el espacio y necesidades.</p>
               </div>
             </div>
-            <!-- 2 -->
+
             <div class="paso">
               <div class="numero">2</div>
               <div class="texto">
-                <h3>Preparación del área</h3>
-                <p>
-                  Organizamos los espacios y utilizamos los productos adecuados
-                  según cada superficie para garantizar una limpieza segura y
-                  eficiente.
-                </p>
+                <h3>Preparación</h3>
+                <p>Organizamos el área a limpiar.</p>
               </div>
             </div>
-            <!-- 3 -->
+
             <div class="paso">
               <div class="numero">3</div>
               <div class="texto">
                 <h3>Limpieza general</h3>
-                <p>
-                  Realizamos limpieza de polvo, superficies, muebles, cocina y
-                  baños, eliminando suciedad acumulada y mejorando el ambiente
-                  del hogar.
-                </p>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="paso">
-              <div class="numero">4</div>
-              <div class="texto">
-                <h3>Pisos y detalles</h3>
-                <p>
-                  Barrido, trapeado y limpieza de detalles como puertas, marcos
-                  y áreas de alto contacto para un acabado completo.
-                </p>
+                <p>Ejecutamos el servicio limpieza hogar.</p>
               </div>
             </div>
 
-            <!-- 5 -->
+            <div class="paso">
+              <div class="numero">4</div>
+              <div class="texto">
+                <h3>Detalles</h3>
+                <p>Acabados y limpieza profunda.</p>
+              </div>
+            </div>
+
             <div class="paso">
               <div class="numero">5</div>
               <div class="texto">
-                <h3>Revisión final</h3>
-                <p>
-                  Verificamos cada área para asegurar resultados de calidad,
-                  dejando el hogar limpio, fresco y listo para disfrutar.
-                </p>
+                <h3>Entrega</h3>
+                <p>Revisión final del servicio.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Galería de fotos -->
+        <!-- Galería -->
         <section>
           <h2>Fotos del trabajo</h2>
           <div class="galeria-servicio">
-            <!-- 1 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/interiorVehiculo.webp"
-                alt="Lavado de interior de vehiculo"
-                loading="lazy"
-              />
-            </div>
-            <!-- 2 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoAlfombra.webp"
-                alt="Lavado de alfombras"
-                loading="lazy"
-              />
-            </div>
-            <!-- 3 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoColchon.webp"
-                alt="Lavado de colchones"
-                loading="lazy"
-              />
-            </div>
-            <!-- 4 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoSofa.webp"
-                alt="Lavado de sofás"
-                loading="lazy"
-              />
-            </div>
-            <!-- 5 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/limpiezaHogar.webp"
-                alt="Limpieza del hogar"
+                alt="limpieza de casas"
                 loading="lazy"
               />
             </div>
@@ -325,12 +313,12 @@
         </section>
       </div>
 
-      <!-- SIDEBAR -->
+      <!-- SIDEBAR (NO TOCADO) -->
       <aside class="sidebar">
         <!-- CTA principal -->
         <div class="card-sidebar sidebar-cta">
           <h3>¿Te interesa? Contáctanos</h3>
-          <a class="btn-cta btn-cta-wa" target="_blank" id="btn-cta-wa">
+          <a class="btn-cta btn-cta-wa" href="" target="_blank" id="btn-cta-wa">
             <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
           </a>
           <a class="btn-cta btn-cta-tel" href="tel:+18294885016">
@@ -384,9 +372,14 @@
         <!-- Otros servicios -->
         <div class="card-sidebar otros-servicios">
           <h3>Otros servicios</h3>
-          <a href="/servicios/limpieza-hogar"
-            ><i class="fas fa-chevron-right"></i> Limpieza del Hogar</a
+
+          <a
+            class="active"
+            style="cursor: default; pointer-events: none; opacity: 0.7"
           >
+            <i class="fas fa-chevron-right"></i> Limpieza del Hogar
+          </a>
+
           <a href="/servicios/sofas-muebles-sillones/"
             ><i class="fas fa-chevron-right"></i> Sofás, Muebles y Sillones</a
           >
@@ -406,7 +399,7 @@
       </aside>
     </div>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer>
       <div class="footer">
         <p>

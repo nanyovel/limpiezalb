@@ -32,6 +32,31 @@
       content="Limpieza profesional de oficinas en Higüey. Mantenemos espacios de trabajo limpios, organizados y saludables para tu equipo."
     />
     <title>Limpieza de Oficinas — Limpieza LB</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "OfficeCleaning",
+        "name": "Servicio Profesional de Limpieza de Oficinas",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Limpieza LB",
+          "teleRel": "829-488-5016",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Higüey",
+            "addressRegion": "La Altagracia",
+            "addressCountry": "DO"
+          }
+        },
+        "areaServed": ["Higüey", "Punta Cana", "Bávaro", "La Romana"],
+        "description": "Limpieza corporativa y desinfección de oficinas en Higüey. Mantenimiento de espacios de trabajo, áreas comunes y desinfección profunda.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://limpiezalb.com/servicios/limpieza-oficinas"
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- ===== HEADER ===== -->
@@ -90,12 +115,47 @@
     </header>
 
     <!-- ===== BREADCRUMB ===== -->
-    <nav class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span>›</span>
-      <a href="/servicios">Servicios</a>
-      <span>›</span>
-      <span>Limpieza de Oficinas</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+        style="list-style: none; display: flex; padding: 0; margin: 0; gap: 8px"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/">
+            <span itemprop="name">Inicio</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/servicios">
+            <span itemprop="name">Servicios</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Limpieza de Oficinas</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
     </nav>
 
     <!-- ===== HERO ===== -->
@@ -238,43 +298,10 @@
         <section>
           <h2>Fotos del trabajo</h2>
           <div class="galeria-servicio">
-            <!-- 1 -->
             <div class="foto">
               <img
-                src="../../img/gallery/small/interiorVehiculo.webp"
+                src="../../img/gallery/small/limpiezaOficina.webp"
                 alt="Lavado de interior de vehiculo"
-                loading="lazy"
-              />
-            </div>
-            <!-- 2 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoAlfombra.webp"
-                alt="Lavado de alfombras"
-                loading="lazy"
-              />
-            </div>
-            <!-- 3 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoColchon.webp"
-                alt="Lavado de colchones"
-                loading="lazy"
-              />
-            </div>
-            <!-- 4 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoSofa.webp"
-                alt="Lavado de sofás"
-                loading="lazy"
-              />
-            </div>
-            <!-- 5 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/limpiezaHogar.webp"
-                alt="Limpieza del hogar"
                 loading="lazy"
               />
             </div>
@@ -354,9 +381,13 @@
           <a href="/servicios/interior-vehiculo"
             ><i class="fas fa-chevron-right"></i> Interior de Vehículo</a
           >
-          <a href="/servicios/limpieza-oficinas"
-            ><i class="fas fa-chevron-right"></i> Limpieza de Oficinas</a
+
+          <a
+            class="active"
+            style="cursor: default; pointer-events: none; opacity: 0.7"
           >
+            <i class="fas fa-chevron-right"></i>Limpieza de Oficinas
+          </a>
         </div>
       </aside>
     </div>
@@ -370,7 +401,7 @@
       </div>
     </footer>
 
-    <script defer src="/servicios/limpieza-oficinas/"></script>
+    <script defer src="/servicios/limpieza-oficinas/codigo/codigo.js"></script>
 
     <script
       defer

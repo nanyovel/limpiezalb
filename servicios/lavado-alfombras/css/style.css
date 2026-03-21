@@ -96,7 +96,7 @@ body {
   text-align: start;
 }
 
-.hero-servicio h1 em {
+.hero-servicio h1 span {
   color: var(--verdeBrillante);
   font-style: normal;
 }

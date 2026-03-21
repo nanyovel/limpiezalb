@@ -14,11 +14,15 @@
       type="image/png"
     />
 
+    <!-- SEO -->
     <meta property="og:site_name" content="Limpieza LB" />
-    <meta property="og:title" content="Limpieza LB" />
+    <meta
+      property="og:title"
+      content="Lavado de Colchones a Domicilio — Limpieza LB"
+    />
     <meta
       property="og:description"
-      content="Descubre todos los servicios de limpieza profesional que ofrece Limpieza LB en Higüey, La Altagracia y zona este del país."
+      content="Lavado de colchones y limpieza de colchones a domicilio. Eliminamos ácaros, manchas y olores con vapor y maquinaria profesional."
     />
     <meta
       property="og:image"
@@ -30,10 +34,39 @@
 
     <meta
       name="description"
-      content="Servicio profesional de limpieza — Limpieza LB"
+      content="Lavado de colchones y limpieza de colchones a domicilio en Higüey. Servicio profesional para limpiar colchón, eliminar manchas y ácaros con aspiradora a vapor para colchones."
     />
-    <title>Lavado de colchobes — Limpieza LB</title>
+
+    <title>
+      Lavado de Colchones en Higüey | Limpieza de Colchones a Domicilio
+    </title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Lavado de Colchones",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Limpieza LB",
+          "teleRel": "829-488-5016",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Higüey",
+            "addressRegion": "La Altagracia",
+            "addressCountry": "DO"
+          }
+        },
+        "areaServed": ["Higüey", "Punta Cana", "Bávaro", "La Romana"],
+        "description": "Servicio profesional de lavado y desinfección de colchones a domicilio. Eliminación de ácaros, bacterias y manchas difíciles con tecnología de vapor.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://limpiezalb.com/servicios/lavado-colchones"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <!-- ===== HEADER ===== -->
     <header class="header">
@@ -42,7 +75,6 @@
           <div class="box2">
             <a href="tel:+18294885016" class="enlaceHeader">
               <i class="fab fa-whatsapp"></i>
-              <!-- <span class="texto"> Llámanos: </span> -->
               <p>829-488-5016</p></a
             >
           </div>
@@ -51,7 +83,6 @@
           <div class="box2">
             <a href="tel:+18298912740" class="enlaceHeader">
               <i class="fab fa-whatsapp"></i>
-              <!-- <span class="texto"> Llámanos: </span> -->
               <p>829-891-2740</p></a
             >
           </div>
@@ -78,7 +109,6 @@
           <ul>
             <a href="/#galeria">Galeria</a>
           </ul>
-
           <ul>
             <a href="/servicios" class="selected">Servicios</a>
           </ul>
@@ -93,12 +123,43 @@
     </header>
 
     <!-- ===== BREADCRUMB ===== -->
-    <nav class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span>›</span>
-      <a href="/servicios">Servicios</a>
-      <span>›</span>
-      <span>Lavado de Colchones</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+        style="list-style: none; display: flex; padding: 0; margin: 0; gap: 8px"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/">
+            <span itemprop="name">Inicio</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true">›</li>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/servicios">
+            <span itemprop="name">Servicios</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li aria-hidden="true">›</li>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Lavado de Colchones</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
     </nav>
 
     <!-- ===== HERO ===== -->
@@ -107,23 +168,22 @@
         <div class="cajaTagCategoria">
           <span class="tag-categoria">Colchones</span>
         </div>
-        <h1 id="hero-titulo">Lavado de <em>Colchones</em></h1>
+        <h1 id="hero-titulo">Lavado de <em>Colchones</em> a Domicilio</h1>
         <p class="subtitulo-hero">
-          Desinfección profunda y eliminación de ácaros, manchas y malos olores
-          directamente en tu domicilio.
+          Servicio de lavado de colchones y limpieza de colchones a domicilio
+          para eliminar ácaros, bacterias y manchas. Limpiamos colchones con
+          vapor y maquinaria profesional directamente en tu hogar.
         </p>
       </div>
     </section>
 
     <!-- ===== LAYOUT PRINCIPAL ===== -->
-    <div class="layout-detalle">
-      <!-- COLUMNA PRINCIPAL -->
+    <main class="layout-detalle">
       <div class="col-principal">
-        <!-- Imagen destacada -->
         <div class="img-principal">
           <img
             src="../../img/gallery/small/lavadoColchon.webp"
-            alt="Lavado de colchones"
+            alt="Lavado de colchones a vapor en Higüey para eliminación de ácaros y manchas"
             loading="lazy"
           />
         </div>
@@ -132,164 +192,113 @@
         <section>
           <h2>¿Qué incluye?</h2>
           <div class="lista-incluye">
-            <!-- generado por JS -->
-            <!-- 1 -->
             <div class="item-incluye">
               <i class="fas fa-spray-can"></i>
               <span>Aspirado profundo</span>
             </div>
-            <!-- 2 -->
             <div class="item-incluye">
               <i class="fas fa-tint"></i>
-              <span>Extracción de manchas</span>
+              <span>Limpiar manchas colchón</span>
             </div>
-            <!-- 3 -->
             <div class="item-incluye">
               <i class="fas fa-wind"></i>
-              <span>Desinfección UV</span>
+              <span>Desinfección con vapor</span>
             </div>
-            <!-- 4 -->
             <div class="item-incluye">
               <i class="fas fa-biohazard"></i>
               <span>Eliminación de ácaros</span>
             </div>
-            <!-- 5 -->
             <div class="item-incluye">
               <i class="fas fa-smile"></i>
               <span>Neutralización de olores</span>
             </div>
-            <!-- 6 -->
             <div class="item-incluye">
               <i class="fas fa-home"></i>
-              <span>Servicio a domicilio</span>
+              <span>Limpieza de colchones a domicilio</span>
             </div>
           </div>
         </section>
 
-        <!-- Descripción extendida -->
+        <!-- Descripción SEO -->
         <section>
           <h2>Sobre este servicio</h2>
           <div>
             <p>
-              En <b>Limpieza LB</b> ofrecemos un servicio de lavado de colchones
-              profesional directamente en tu hogar, sin necesidad de trasladar
-              el colchón. Nuestro equipo llega con la maquinaria y los productos
-              necesarios para dejarlo completamente limpio y desinfectado.",
-              "Los colchones acumulan miles de ácaros, bacterias, polvo y restos
-              orgánicos que son invisibles a simple vista pero afectan
-              directamente tu salud y la calidad de tu sueño. Un colchón limpio
-              marca la diferencia.", "Usamos tecnología de extracción de vapor,
-              aspiración de alta potencia y agentes desinfectantes aprobados
-              para garantizar resultados visibles y duraderos, cuidando los
-              materiales de tu colchón.
+              En <b>Limpieza LB</b> ofrecemos lavado de colchones y limpieza de
+              colchones a domicilio en Higüey y toda la zona Este. Nuestro
+              servicio está diseñado para quienes necesitan limpiar colchón sin
+              moverlo de su hogar.
+            </p>
+
+            <p>
+              Los colchones acumulan ácaros, bacterias y manchas con el uso
+              diario. Por eso utilizamos limpiador de colchones profesional y
+              equipos de alta potencia para garantizar una limpieza profunda y
+              segura.
+            </p>
+
+            <p>
+              Aplicamos aspiradora a vapor para colchones y técnicas de
+              desinfección que permiten limpiar manchas colchón, eliminar olores
+              y mejorar la calidad del descanso.
             </p>
           </div>
         </section>
 
-        <!-- Proceso paso a paso -->
+        <!-- Proceso -->
         <section>
           <h2>¿Cómo trabajamos?</h2>
           <div class="pasos">
-            <!-- 1 -->
             <div class="paso">
               <div class="numero">1</div>
               <div class="texto">
-                <h3>Inspección inicial</h3>
-                <p>
-                  Evaluamos el estado del colchón, tipo de material, manchas y
-                  nivel de suciedad para definir el proceso adecuado.
-                </p>
+                <h3>Inspección</h3>
+                <p>Evaluamos el estado del colchón.</p>
               </div>
             </div>
-            <!-- 2 -->
+
             <div class="paso">
               <div class="numero">2</div>
               <div class="texto">
                 <h3>Aspirado profundo</h3>
-                <p>
-                  Extraemos el polvo acumulado, los ácaros y partículas pequeñas
-                  con equipos de aspiración de alta potencia.
-                </p>
+                <p>Eliminamos polvo y ácaros.</p>
               </div>
             </div>
-            <!-- 3 -->
+
             <div class="paso">
               <div class="numero">3</div>
               <div class="texto">
                 <h3>Tratamiento de manchas</h3>
-                <p>
-                  Aplicamos soluciones especializadas en las manchas para
-                  removerlas sin dañar los materiales del colchón.
-                </p>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="paso">
-              <div class="numero">4</div>
-              <div class="texto">
-                <h3>Extracción con vapor</h3>
-                <p>
-                  Limpieza con vapor caliente para eliminar bacterias, gérmenes
-                  y neutralizar malos olores en profundidad.
-                </p>
+                <p>Aplicamos limpiador de colchones especializado.</p>
               </div>
             </div>
 
-            <!-- 5 -->
+            <div class="paso">
+              <div class="numero">4</div>
+              <div class="texto">
+                <h3>Limpieza con vapor</h3>
+                <p>Uso de aspiradora a vapor para colchones.</p>
+              </div>
+            </div>
+
             <div class="paso">
               <div class="numero">5</div>
               <div class="texto">
-                <h3>Secado y desinfección</h3>
-                <p>
-                  Proceso de secado rápido y aplicación final de desinfectante
-                  para garantizar un ambiente limpio y saludable.
-                </p>
+                <h3>Secado</h3>
+                <p>Dejamos el colchón listo para su uso.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Galería de fotos -->
+        <!-- Galería -->
         <section>
           <h2>Fotos del trabajo</h2>
           <div class="galeria-servicio">
-            <!-- 1 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/interiorVehiculo.webp"
-                alt="Lavado de interior de vehiculo"
-                loading="lazy"
-              />
-            </div>
-            <!-- 2 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoAlfombra.webp"
-                alt="Lavado de alfombras"
-                loading="lazy"
-              />
-            </div>
-            <!-- 3 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/lavadoColchon.webp"
-                alt="Lavado de colchones"
-                loading="lazy"
-              />
-            </div>
-            <!-- 4 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/lavadoSofa.webp"
-                alt="Lavado de sofás"
-                loading="lazy"
-              />
-            </div>
-            <!-- 5 -->
-            <div class="foto">
-              <img
-                src="../../img/gallery/small/limpiezaHogar.webp"
-                alt="Limpieza del hogar"
+                alt="limpieza de colchones a domicilio"
                 loading="lazy"
               />
             </div>
@@ -297,7 +306,7 @@
         </section>
       </div>
 
-      <!-- SIDEBAR -->
+      <!-- SIDEBAR (igual) -->
       <aside class="sidebar">
         <!-- CTA principal -->
         <div class="card-sidebar sidebar-cta">
@@ -365,9 +374,13 @@
           <a href="/servicios/lavado-alfombras"
             ><i class="fas fa-chevron-right"></i> Lavado de Alfombras</a
           >
-          <a href="/servicios/lavado-colchones"
-            ><i class="fas fa-chevron-right"></i> Lavado de Colchones</a
+
+          <a
+            class="active"
+            style="cursor: default; pointer-events: none; opacity: 0.7"
           >
+            <i class="fas fa-chevron-right"></i> Lavado de Colchones
+          </a>
           <a href="/servicios/interior-vehiculo"
             ><i class="fas fa-chevron-right"></i> Interior de Vehículo</a
           >
@@ -376,9 +389,9 @@
           >
         </div>
       </aside>
-    </div>
+    </main>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer>
       <div class="footer">
         <p>

@@ -34,6 +34,32 @@
       content="Servicio de limpieza de interior de vehículo con lavado profundo, desmontaje de asientos y eliminación de olores a domicilio."
     />
     <title>Interior de Vehículo | Limpieza LB</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AutoCleaning",
+        "name": "Limpieza Profunda de Interior de Vehículos",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Limpieza LB",
+          "teleRel": "829-488-5016",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Higüey",
+            "addressRegion": "La Altagracia",
+            "addressCountry": "DO"
+          }
+        },
+        "areaServed": ["Higüey", "Punta Cana", "Bávaro", "La Romana"],
+        "description": "Servicio profesional de limpieza de interiores de vehículos a domicilio. Incluye desmontaje de asientos, lavado de alfombras y eliminación de olores.",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://limpiezalb.com/servicios/interior-vehiculo"
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- ===== HEADER ===== -->
@@ -94,12 +120,47 @@
     </header>
 
     <!-- ===== BREADCRUMB ===== -->
-    <nav class="breadcrumb">
-      <a href="/">Inicio</a>
-      <span>›</span>
-      <a href="/servicios">Servicios</a>
-      <span>›</span>
-      <span>Interior de vehiculos</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol
+        itemscope
+        itemtype="https://schema.org/BreadcrumbList"
+        style="list-style: none; display: flex; padding: 0; margin: 0; gap: 8px"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/">
+            <span itemprop="name">Inicio</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/servicios">
+            <span itemprop="name">Servicios</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+
+        <li aria-hidden="true">›</li>
+
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Interior de Vehículo</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ol>
     </nav>
 
     <!-- ===== HERO ===== -->
@@ -272,15 +333,13 @@
                 loading="lazy"
               />
             </div>
-            <!-- 2 -->
-            <div class="foto">
+            <!-- <div class="foto">
               <img
                 src="../../img/gallery/small/lavadoAlfombra.webp"
                 alt="Lavado de alfombras"
                 loading="lazy"
               />
             </div>
-            <!-- 3 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/lavadoColchon.webp"
@@ -288,7 +347,6 @@
                 loading="lazy"
               />
             </div>
-            <!-- 4 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/lavadoSofa.webp"
@@ -296,14 +354,13 @@
                 loading="lazy"
               />
             </div>
-            <!-- 5 -->
             <div class="foto">
               <img
                 src="../../img/gallery/small/limpiezaHogar.webp"
                 alt="Limpieza del hogar"
                 loading="lazy"
               />
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
@@ -379,9 +436,12 @@
           <a href="/servicios/lavado-colchones"
             ><i class="fas fa-chevron-right"></i> Lavado de Colchones</a
           >
-          <a href="/servicios/interior-vehiculo"
-            ><i class="fas fa-chevron-right"></i> Interior de Vehículo</a
+          <a
+            class="active"
+            style="cursor: default; pointer-events: none; opacity: 0.7"
           >
+            <i class="fas fa-chevron-right"></i> Interior de Vehículos
+          </a>
           <a href="/servicios/limpieza-oficinas"
             ><i class="fas fa-chevron-right"></i> Limpieza de Oficinas</a
           >

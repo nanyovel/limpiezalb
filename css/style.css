@@ -94,7 +94,8 @@ body {
 }
 .wrapTextoMain {
   /* height: 400px; */
-
+  /* border: 1px solid red; */
+  width: 650px;
   opacity: 0;
   animation: aparecerSubiendo 1.2s ease forwards;
 }
@@ -115,7 +116,7 @@ body {
 }
 
 .contenedor-textos .title {
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 700;
   color: var(--azulBrillante);
 }
@@ -125,7 +126,7 @@ body {
   color: white;
 }
 
-.contenedor-textos h2 {
+.contenedor-textos .subTitle {
   font-size: 20px;
   font-weight: 400;
   color: var(--verdeBrillante);
@@ -397,7 +398,7 @@ body {
   object-position: center bottom;
 }
 
-.menu .cardMenu h2 {
+.menu .cardMenu h3 {
   color: var(--verdePrimary);
   width: 100%;
   text-align: center;
@@ -458,7 +459,7 @@ body {
   border-radius: 20px;
 }
 
-.contactos .contenedor-direccion {
+.contactos .direccion {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;

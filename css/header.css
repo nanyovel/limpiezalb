@@ -73,7 +73,9 @@
   flex-wrap: wrap;
   gap: 15px;
 }
-
+.contenedorNav .menu li {
+  list-style: none;
+}
 .contenedorNav .menu a {
   /* margin-right: 25px; */
   text-decoration: none;
