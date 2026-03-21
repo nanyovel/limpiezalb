@@ -40,96 +40,6 @@ body {
   font-weight: 600;
 }
 
-/* ===== HEADER ===== */
-.header {
-  position: fixed;
-  padding-bottom: 7px;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  background-image: linear-gradient(to top, #0e172fe4 100%);
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid var(--verdePrimary);
-  padding: 10px;
-}
-
-.caja-header {
-  /* padding: 10px 20px; */
-
-  /* width: 50%; */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.caja-whatsapp {
-  margin-right: 8px;
-}
-
-.header .box2 {
-  display: flex;
-  align-items: center;
-  /* margin-left: 10px; */
-}
-
-.header .enlaceHeader {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 300;
-}
-
-.header .enlaceHeader:hover {
-  color: var(--verdeBrillante);
-}
-
-.header .caja-header i {
-  font-size: 1.5rem;
-}
-
-.header span {
-  margin-right: 4px;
-}
-
-.contenedorNav {
-  /* padding: 0 35px; */
-  /* bottom: 70px; */
-  /* background-color: red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenedorNav .menu {
-  /* margin-top: 35px; */
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.contenedorNav .menu a {
-  /* margin-right: 25px; */
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 200;
-  transition: color 0.3s ease;
-}
-.contenedorNav .menu .selected {
-  color: var(--verdeBrillante);
-  text-decoration: underline;
-}
-.contenedorNav .menu a:hover {
-  color: var(--verdeBrillante);
-  text-decoration: underline;
-}
-
 /* ===== HERO ===== */
 .hero {
   background-image: linear-gradient(to top, #0e172fe4 100%),
@@ -653,26 +563,6 @@ body {
   background: var(--verdePrimary);
   color: #fff;
 }
-/* ===== FOOTER ===== */
-.footer {
-  width: 100%;
-  min-height: 30px;
-  background-color: #000;
-  text-align: center;
-  color: #ffde08;
-  padding: 6px 10px;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer a {
-  color: var(--azulPrimary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 1100px) {
   .wrap2InternoHero {
     width: 90%;
@@ -753,34 +643,12 @@ body {
     justify-content: center;
   }
 }
-@media screen and (max-width: 800px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-  }
-}
+
 /* ===== RESPONSIVE — MOBILE GRANDE (≤ 768px) ===== */
 @media screen and (max-width: 768px) {
-  .caja-whatsapp {
-    margin-right: 0;
-  }
   .hero .wave {
     display: none;
   }
-  .contenedorNav {
-    padding: 0 15px;
-  }
-
-  .contenedorNav .menu {
-    justify-content: center;
-  }
-
-  .contenedorNav .menu a {
-    margin-right: 12px;
-    font-size: 16px;
-  }
-
   .wrapTextoMain {
     width: 95%;
   }
@@ -792,21 +660,6 @@ body {
   .contenedor-textos p {
     font-size: 22px;
     width: 100%;
-  }
-
-  .menu .wrapCardMenu {
-    flex-direction: column;
-  }
-  .menu .cardMenu {
-    flex: 0 0 380px;
-    width: 230px;
-    height: 320px;
-    box-shadow: 2px 3px 12px 0px rgb(35 35 35 / 80%);
-    border-radius: 8px;
-    overflow: hidden;
-
-    width: 100%;
-    height: 550px;
   }
 
   .contactos {
@@ -829,27 +682,9 @@ body {
   .wrapTextoMain {
     width: 100%;
   }
-  .contenedorNav {
-    padding: 0;
-  }
-
-  .contenedorNav .menu {
-    width: 100%;
-    gap: 7px;
-  }
 }
 /* ===== RESPONSIVE — MOBILE PEQUEÑO (≤ 480px) ===== */
 @media screen and (max-width: 480px) {
-  .header .caja-header {
-    padding: 10px 6px;
-  }
-  .header .enlaceHeader i {
-    font-size: 16px;
-  }
-  .header .enlaceHeader {
-    font-size: 14px;
-  }
-
   .caja-logo {
     height: 60px;
   }
@@ -897,19 +732,11 @@ body {
     font-size: 1.2rem;
   }
 
-  .menu .wrapCardMenu {
-    padding: 30px 10px;
-  }
-
   .contactos .contenedor-horario-ubicacion,
   .img-contactos {
     width: 100%;
   }
 
-  .footer {
-    font-size: 13px;
-    min-height: 40px;
-  }
   .galeria .galeria-container {
     width: 85%;
   }

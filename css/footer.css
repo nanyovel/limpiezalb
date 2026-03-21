@@ -1,0 +1,27 @@
+/* ===== FOOTER ===== */
+.footer {
+  width: 100%;
+  min-height: 30px;
+  background-color: #000;
+  text-align: center;
+  color: #ffde08;
+  padding: 6px 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  color: #ffde08;
+  /* color: var(--azulPrimary); */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 13px;
+    min-height: 40px;
+  }
+}
